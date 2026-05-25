@@ -14,7 +14,7 @@ def print_config(matrix: str, database: str | None, api: str | None,
 
 def get_config() -> bool:
     try:
-        from dotenv import find_dotenv, load_dotenv
+        from dotenv import find_dotenv, load_dotenv # type: ignore
     except Exception as e:
         print(f"[ERROR] {e}")
         return False
